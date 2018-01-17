@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TaskGithubRepos</string>
+
+    <string name="repos_name_label">Name</string>
+    <string name="repos_owner_label">Owner</string>
+    <string name="repos_description_label">Description</string>
+    <string name="repos_page_key">repos_page_url</string>
+    <string name="owner_page_key">owner_page_url</string>
+
+
+</resources>

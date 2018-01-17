@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="list_of_html_page" >
+        <item>Repository Page</item>
+        <item>Owner      Page</item>
+    </array>
+</resources>

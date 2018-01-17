@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ my problem that constrain layout not wrap the height.
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Name:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owner:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/labelName"
+        app:layout_constraintStart_toEndOf="@+id/textName"
+        app:layout_constraintTop_toTopOf="@+id/labelName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textOwner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif-light"
+        android:paddingEnd="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingStart="4dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/labelOwner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelOwner"
+        app:layout_constraintTop_toTopOf="@+id/labelOwner"
+        tools:text="TextView" />
+
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:maxLines = "2"
+        android:fontFamily="sans-serif-light"
+        android:paddingEnd="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingStart="4dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/labelName"
+        app:layout_constraintStart_toEndOf="@+id/labelName"
+        app:layout_constraintTop_toTopOf="@+id/labelName"
+        tools:text="TextView" />
+
+
+    <TextView
+        android:id="@+id/labelDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Description:"
+        android:maxLines = "6"
+        android:scrollbars = "vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/textName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/labelName"
+        app:layout_constraintTop_toBottomOf="@+id/labelName"
+        />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:singleLine="false"
+        android:maxLines = "6"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scrollbars = "vertical"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/labelDescription"
+        app:layout_constraintTop_toBottomOf="@+id/labelDescription"
+        tools:text="Aardvark is a library that makes it dead simple to create actionable bug reports." />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
